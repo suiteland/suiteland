@@ -79,7 +79,11 @@ Un solo mod — el resto del pack (~2 GB) se baja solo la primera vez.
 ## 4. Conectar
 
 1. Multijugador → **Añadir servidor** → la IP que te dieron
-2. AutoModpack descarga el pack (~2 GB, una vez)
+2. AutoModpack descarga el pack (~1.4 GB, una vez)
+   - Te saldrá una pantalla diciendo que **2 mods no están en las
+     tiendas** (el nuestro `suiteland-0.1.0.jar` y el de config de JEI)
+   - Marca **"I understand the risk and trust this server"** →
+     **Download**
    - Si pide verificar certificado → `Skip` o pega el fingerprint
      fijado en `ℹ️-info` del Discord
 3. El juego se reinicia solo → conecta de nuevo → dentro
