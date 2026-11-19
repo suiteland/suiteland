@@ -1,30 +1,29 @@
 # SuiteLand
 
-Servidor Minecraft con modpack propio que **se actualiza solo**. Instala la
+Servidor Minecraft con modpack que **se actualiza solo**. Instala la
 instancia una vez y cada cambio llega automático al conectar.
 
-## 🎮 Cómo entrar (3 pasos)
+## 🎮 Cómo entrar (2 pasos)
 
-1. **Discord** — pide a un admin el rol `SuiteLand - Jugador` y haz
-   `/mc link TuNombre` con tu nombre de Minecraft
-2. **Pack** — descarga el `.mrpack` de [Releases](../../releases/latest)
-   e impórtalo en tu launcher (CurseForge, Prism, Modrinth App)
-3. **Juega** — conecta a la IP que te dieron — el resto se descarga solo
+1. **Whitelist** — pide a un admin que añada tu nombre de Minecraft
+   al server (es manual, por Discord o donde estéis)
+2. **Pack** — instancia 1.21.1 + NeoForge + el mod AutoModpack, y
+   conecta a la IP — el resto se descarga solo
 
 Guía completa por launcher: [`INSTALACION.md`](INSTALACION.md)
 
-## 🔑 Si tu cuenta NO es premium
-
-Al hacer `/mc link` el bot te da un **código de 6 dígitos**. Entra al
-server y escribe `/link CODIGO` — verificas que eres tú y quedas
-vinculado. Detalles en `INSTALACION.md`.
-
 ## 📦 Qué contiene
 
-- Base: All The Mods 10 (Minecraft 1.21.1, NeoForge)
-- AutoModpack — sync automático de mods al conectar
-- SuiteLand Core — vinculación y acceso in-game
+- Base: FTB Direwolf20 1.21 Season 14 (Minecraft 1.21.1, NeoForge)
+- AutoModpack — sync automático de mods y configs al conectar
+- SuiteLand Core — mod del server (reinicios programados y más)
+
+## 🔑 Si tu cuenta NO es premium
+
+Funciona igual — el server acepta cuentas no-premium. Para ver tu skin
+activa el grupo opcional de mods al instalar (CustomSkinLoader se baja
+solo si lo marcas).
 
 ## 🔗 Acceso
 
-La IP y el rol los gestiona un admin por Discord — pide invitación.
+La IP y la whitelist las gestiona un admin — pide invitación.

@@ -1,43 +1,21 @@
 # Instalación — SuiteLand
 
-Entrar al server son 4 pasos: rol en Discord → `/mc link` → instancia
-limpia + AutoModpack → conectar.
+Entrar al server son 2 pasos: que un admin te meta en la whitelist →
+instancia limpia + AutoModpack → conectar.
 
 ---
 
-## 1. Rol en Discord
+## 1. Whitelist
 
-Pide a un admin el rol **`SuiteLand - Jugador`**. Es manual — no se da
-solo. Sin rol no entras.
+Pide a un admin que añada tu nombre de Minecraft **exacto**
+(mayúsculas incluidas) a la whitelist del server. Es manual — tarda
+segundos.
 
-**¿Ya lo tienes?** Si ves los canales del Discord — `ℹ️-info`,
-`💬-chat`, `🔔-notificaciones` — ya lo tienes. Si no los ves, pide el
-rol a un admin.
-
----
-
-## 2. Vincular tu cuenta
-
-En cualquier canal:
-
-```
-/mc link TuNombreDeMinecraft
-```
-
-El nombre **exacto** que uses al entrar (mayúsculas y todo).
-
-| Tu cuenta | Qué pasa |
-|---|---|
-| **Premium** | Vinculado ya — ve al paso 3 |
-| **No premium** | Te da un código de 6 dígitos — lo usas al entrar |
-
-**Con código:** entras al server, te quedas congelado (es normal),
-escribes `/register TuClave TuClave` y luego `/link 482917` (tu código).
-Si pasan 15 min sin hacerlo, el código muere — repite `/mc link`.
+Sin whitelist no entras: el server dirá *"not white-listed"*.
 
 ---
 
-## 3. Instancia limpia + AutoModpack
+## 2. Instancia limpia + AutoModpack
 
 El pack se descarga **del server** cuando conectas — tú solo instalas
 el mod que lo descarga.
@@ -50,18 +28,17 @@ NeoForge, coge la que empiece por `21.1.267`.
 
 ### AutoModpack — el único mod que instalas tú
 
-En **CurseForge** o **TLauncher** lo instalas desde el propio launcher:
-
 | Launcher | Cómo lo instalas |
 |---|---|
 | **CurseForge** | Crea instancia 1.21.1 NeoForge → pestaña **Mods** → busca "AutoModpack" → **Instalar** |
+| **Prism** | Instancia 1.21.1 NeoForge → **Edit** → **Mods** → Download → busca "AutoModpack" |
 | **TLauncher** | Crea instancia 1.21.1 NeoForge → **TLMods** → busca "AutoModpack" → instala |
 
-Si tu launcher no tiene buscador de mods, bájalo suelto:
+Si tu launcher no tiene buscador, bájalo suelto:
 **https://www.curseforge.com/minecraft/mc-mods/automodpack**
 y suéltalo en la carpeta `mods` de la instancia.
 
-Un solo mod — el resto del pack (~2 GB) se baja solo la primera vez.
+Un solo mod — el resto del pack se baja solo la primera vez.
 
 ### RAM
 
@@ -76,27 +53,23 @@ Un solo mod — el resto del pack (~2 GB) se baja solo la primera vez.
 
 ---
 
-## 4. Conectar
+## 3. Conectar
 
 1. Multijugador → **Añadir servidor** → la IP que te dieron
-2. AutoModpack descarga el pack (~1.4 GB, una vez)
-   - Te saldrá una pantalla diciendo que **2 mods no están en las
-     tiendas** (el nuestro `suiteland-0.1.0.jar` y el de config de JEI)
-   - Marca **"I understand the risk and trust this server"** →
-     **Download**
-   - Si pide verificar certificado → `Skip` o pega el fingerprint
-     fijado en `ℹ️-info` del Discord
+2. AutoModpack descarga el pack (pesa — paciencia la primera vez)
+   - Si sale una pantalla con mods que **no están en las tiendas**
+     (el nuestro `suiteland.jar`, CustomSkinLoader…) marca
+     **"I understand the risk and trust this server"** → **Download**
+   - Si pide verificar certificado → `Skip`
 3. El juego se reinicia solo → conecta de nuevo → dentro
 
-### En el juego
+### Mods opcionales (grupo OPTIONAL)
 
-| Tu caso | Escribes |
-|---|---|
-| Primera vez | `/register TuClave TuClave` |
-| Ya registrado | `/login TuClave` |
-| Con código pendiente | `/register` → `/link CODIGO` |
+Al conectar, AutoModpack te deja elegir mods opt-in. El que te interesa
+si tu cuenta no es premium:
 
-Sin código → vinculado ya, solo `/register`.
+- **CustomSkinLoader** — para ver skins (tuya y de otros) sin cuenta
+  premium. Márcalo y se instala solo.
 
 ---
 
@@ -104,28 +77,23 @@ Sin código → vinculado ya, solo `/register`.
 
 | Mensaje | Qué hacer |
 |---|---|
-| *"not white-listed"* | No hiciste `/mc link` o el código caducó |
-| El bot dice "falta el rol" | Pide `SuiteLand - Jugador` a un admin |
-| *"ya está vinculado"* | Otro usó ese nombre — habla con admin |
-| *"Código no válido"* | Pasaron 15 min — `/mc link` de nuevo |
-| Te quedas quieto al entrar | Es el limbo — `/link CODIGO` |
+| *"not white-listed"* | Pide al admin que añada tu nombre exacto |
 | El pack no baja | Espera y reinicia el juego |
 | Crash al arrancar | RAM baja — mínimo 6 GB |
 | Se congela | Demasiada RAM — baja a 8-10 GB |
-| Sigue crasheando | Borra `mods/` menos `automodpack.jar` |
+| Sigue crasheando | Borra `mods/` menos `automodpack.jar` y reentra |
+| No ves tu skin | Activa CustomSkinLoader (grupo OPTIONAL) |
 
 ---
 
 ## Resumen
 
 ```
-Admin te da el rol "SuiteLand - Jugador"
+Admin añade tu nombre a la whitelist
         ↓
-/mc link TuNombre    →  premium: listo / no premium: código
+Instancia 1.21.1 + NeoForge 21.1.267 + AutoModpack
         ↓
-Instancia limpia + AutoModpack + conectar a la IP
+Conecta a la IP → el pack se baja solo → reinicio → dentro
         ↓
-/register clave clave  +  /link CODIGO (si lo tienes)
-        ↓
-    dentro
+(Opcional) marca CustomSkinLoader si no eres premium
 ```
