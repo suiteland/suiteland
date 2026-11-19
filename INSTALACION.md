@@ -10,6 +10,10 @@ limpia + AutoModpack → conectar.
 Pide a un admin el rol **`SuiteLand - Jugador`**. Es manual — no se da
 solo. Sin rol no entras.
 
+**¿Ya lo tienes?** Si ves los canales del Discord — `ℹ️-info`,
+`💬-chat`, `🔔-notificaciones` — ya lo tienes. Si no los ves, pide el
+rol a un admin.
+
 ---
 
 ## 2. Vincular tu cuenta
