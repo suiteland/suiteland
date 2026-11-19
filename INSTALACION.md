@@ -58,24 +58,40 @@ y el bot te avisa por DM — vuelve a `/mc link`.
 Descarga el `.mrpack` de [Releases](../../releases/latest) — es la
 instancia completa.
 
+### RAM — el ajuste más importante
+
+El pack pide bastante, pero se ajusta al PC que tengas:
+
+| Tu PC total | Ponle al juego | Cómo irá |
+|---|---|---|
+| 8 GB | **6 GB** | Justito — cierra Chrome y lo demás, render bajo (8-10 chunks) |
+| 16 GB | **10 GB** ✅ | Recomendado — va fluido, settings normales |
+| 32 GB+ | **12-16 GB** | Sobrado — máximo render, shaders si quieres |
+
+> ⚠️ **No pongas más de la mitad de tu RAM total** — el SO y Java
+> necesitan aire. Con 8GB de PC, 6 al juego es el límite sano.
+>
+> 💡 En Java, **más RAM no es más FPS** — pasados ~10-12 GB solo empeora
+> la recolección de basura. El sweet spot es 8-10 GB para este pack.
+
 ### CurseForge
 
 1. **Minecraft** → **Crear perfil personalizado** → **Importar**
    → el `.mrpack` (o arrastra el archivo)
-2. **RAM — importante**: Perfil → ⋮ → Opciones → memoria → **10240 MB**
+2. Perfil → ⋮ → Opciones → memoria → según tu PC (tabla ↑)
 3. Jugar
 
 ### Prism Launcher
 
 1. **Añadir instancia** → **Importar** → **Modrinth** → el `.mrpack`
-2. Editar → Java → memoria: **10240 MB** mínimo
+2. Editar → Java → memoria: según tu PC (tabla ↑)
 3. Jugar
 
 ### Launcher oficial
 
 1. Instala NeoForge 21.1.267 para MC 1.21.1
 2. `automodpack.jar` en `%appdata%\.minecraft\mods\`
-3. Opciones de lanzamiento → `-Xmx10G`
+3. Opciones de lanzamiento → `-Xmx8G` (o lo que aguante tu PC)
 
 ---
 
@@ -130,8 +146,10 @@ reinicia. Sin cambios → entras directo.
 |---|---|
 | El pack no descarga | Espera a AutoModpack y reinicia el juego |
 | Pantalla roja al conectar | Server actualizando — reintenta en 2 min |
-| Crash al arrancar | Sube RAM a 10-12 GB (causa #1) |
+| Crash al arrancar | RAM baja — mínimo 6 GB al juego (mira la tabla) |
+| Se congela / GC cada pocos segundos | Demasiada RAM — baja a 8-10 GB |
 | Sigue crasheando | Borra `.minecraft/mods/` menos `automodpack.jar` |
+| Lag bajo | Render a 8-10 chunks, desactiva shaders |
 
 ---
 
