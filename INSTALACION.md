@@ -53,14 +53,40 @@ y el bot te avisa por DM — vuelve a `/mc link`.
 
 ---
 
-## Paso 1 — Instalar el pack
+## Paso 1 — Instancia limpia + AutoModpack
 
-Descarga el `.mrpack` de [Releases](../../releases/latest) — es la
-instancia completa.
+El pack se descarga **del server** al conectar — tu launcher solo hace
+de envoltorio. Instancia limpia de **Minecraft 1.21.1 + NeoForge
+21.1.267** con un único mod: **AutoModpack**.
+
+### AutoModpack — el único mod que instalas tú
+
+Descárgalo de Modrinth y mételo en `mods/` de tu instancia:
+**https://modrinth.com/mod/automodpack**
+
+No hay .mrpack que importar — todo se baja solo la primera vez
+(~2 GB, una sola vez).
+
+### CurseForge
+
+1. **Minecraft** → **Crear perfil personalizado**
+2. Minecraft **1.21.1** · Modloader **NeoForge** · Versión **21.1.267**
+3. Perfil → ⋮ → Opciones → añade `automodpack.jar` a la carpeta `mods`
+4. Opciones → memoria: según tu PC (tabla ↓)
+
+### Prism Launcher / MultiMC
+
+1. **Añadir instancia** → Minecraft **1.21.1** · NeoForge **21.1.267**
+2. Editar → Mods → añade `automodpack.jar`
+3. Editar → Java → memoria: según tu PC (tabla ↓)
+
+### TLauncher
+
+1. Versión **1.21.1 NeoForge 21.1.267**
+2. Carpeta del juego → `mods` → suelta `automodpack.jar`
+3. Ajustes → RAM: según tu PC (tabla ↓)
 
 ### RAM — el ajuste más importante
-
-El pack pide bastante, pero se ajusta al PC que tengas:
 
 | Tu PC total | Ponle al juego | Cómo irá |
 |---|---|---|
@@ -73,25 +99,6 @@ El pack pide bastante, pero se ajusta al PC que tengas:
 >
 > 💡 En Java, **más RAM no es más FPS** — pasados ~10-12 GB solo empeora
 > la recolección de basura. El sweet spot es 8-10 GB para este pack.
-
-### CurseForge
-
-1. **Minecraft** → **Crear perfil personalizado** → **Importar**
-   → el `.mrpack` (o arrastra el archivo)
-2. Perfil → ⋮ → Opciones → memoria → según tu PC (tabla ↑)
-3. Jugar
-
-### Prism Launcher
-
-1. **Añadir instancia** → **Importar** → **Modrinth** → el `.mrpack`
-2. Editar → Java → memoria: según tu PC (tabla ↑)
-3. Jugar
-
-### Launcher oficial
-
-1. Instala NeoForge 21.1.267 para MC 1.21.1
-2. `automodpack.jar` en `%appdata%\.minecraft\mods\`
-3. Opciones de lanzamiento → `-Xmx8G` (o lo que aguante tu PC)
 
 ---
 
