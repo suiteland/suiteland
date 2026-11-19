@@ -99,7 +99,12 @@ El pack pide bastante, pero se ajusta al PC que tengas:
 
 1. Multijugador → **Añadir servidor** → la IP que te dieron
 2. Al conectar, **AutoModpack descarga el pack** (~2 GB — solo esta vez)
+   - Si te pide verificación del certificado → `Skip` (opcional) o pega el
+     fingerprint que aparece fijado en `ℹ️-info` del Discord → `Verify`
 3. El juego se reinicia solo → conecta de nuevo → dentro
+
+> El fingerprint lo publica el bot en `ℹ️-info` — se actualiza solo si el
+> server regenera el certificado.
 
 ---
 
