@@ -42,6 +42,12 @@ Si pasan 15 min sin hacerlo, el código muere — repite `/mc link`.
 El pack se descarga **del server** cuando conectas — tú solo instalas
 el mod que lo descarga.
 
+### Versión exacta
+
+Minecraft **1.21.1** · NeoForge **21.1.267** — no otra. Si tu
+launcher te deja elegir, esas son. Si sale una lista larga de
+NeoForge, coge la que empiece por `21.1.267`.
+
 ### AutoModpack — el único mod que instalas tú
 
 En **CurseForge** o **TLauncher** lo instalas desde el propio launcher:
