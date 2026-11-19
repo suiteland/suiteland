@@ -42,31 +42,20 @@ Si pasan 15 min sin hacerlo, el código muere — repite `/mc link`.
 El pack se descarga **del server** cuando conectas — tú solo instalas
 el mod que lo descarga.
 
-### AutoModpack
+### AutoModpack — el único mod que instalas tú
 
-Bájalo de CurseForge:
+En **CurseForge** o **TLauncher** lo instalas desde el propio launcher:
+
+| Launcher | Cómo lo instalas |
+|---|---|
+| **CurseForge** | Crea instancia 1.21.1 NeoForge → pestaña **Mods** → busca "AutoModpack" → **Instalar** |
+| **TLauncher** | Crea instancia 1.21.1 NeoForge → **TLMods** → busca "AutoModpack" → instala |
+
+Si tu launcher no tiene buscador de mods, bájalo suelto:
 **https://www.curseforge.com/minecraft/mc-mods/automodpack**
+y suéltalo en la carpeta `mods` de la instancia.
 
 Un solo mod — el resto del pack (~2 GB) se baja solo la primera vez.
-
-### CurseForge
-
-1. **Minecraft** → **Crear perfil personalizado**
-2. Versión **1.21.1** · Modloader **NeoForge** · **21.1.267**
-3. Carpeta `mods` de la instancia → suelta `automodpack.jar`
-4. Opciones → RAM según tu PC (tabla abajo)
-
-### Prism / MultiMC
-
-1. **Añadir instancia** → **1.21.1** · NeoForge **21.1.267**
-2. Editar → Mods → `automodpack.jar`
-3. Editar → Java → RAM según tu PC
-
-### TLauncher
-
-1. Versión **1.21.1 NeoForge 21.1.267**
-2. Carpeta del juego → `mods` → `automodpack.jar`
-3. Ajustes → RAM según tu PC
 
 ### RAM
 
