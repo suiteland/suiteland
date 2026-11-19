@@ -1,0 +1,5 @@
+# nada privado — este repo es público
+releases/
+*.mrpack
+.env*
+secrets*
