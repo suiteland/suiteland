@@ -61,8 +61,8 @@ de envoltorio. Instancia limpia de **Minecraft 1.21.1 + NeoForge
 
 ### AutoModpack — el único mod que instalas tú
 
-Descárgalo de Modrinth y mételo en `mods/` de tu instancia:
-**https://modrinth.com/mod/automodpack**
+Descárgalo de CurseForge y mételo en `mods/` de tu instancia:
+**https://www.curseforge.com/minecraft/mc-mods/automodpack**
 
 No hay .mrpack que importar — todo se baja solo la primera vez
 (~2 GB, una sola vez).
