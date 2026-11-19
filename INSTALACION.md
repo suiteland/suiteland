@@ -1,74 +1,155 @@
 # Instalación paso a paso — SuiteLand
 
-## Paso 0 — Antes de instalar nada (en Discord)
+Guía completa para entrar al server. Necesitas Discord + Minecraft con
+cualquier launcher moderno.
 
-El acceso al server se controla por vinculación Discord ↔ Minecraft.
+---
 
-1. Reacciona en el panel de avisos para obtener el rol de jugador
-2. Ejecuta `/vincular TuNombreExacto` con tu nombre de Minecraft tal cual
-   (3-16 caracteres, sin espacios, mayúsculas respetadas)
-3. ✅ listo — ya puedes entrar al server en cuanto lo tengas instalado
+## Paso 0 — Vincular tu cuenta (en Discord)
 
-> Si el nombre ya está vinculado a otra cuenta de Discord, el bot te lo
-> dice — habla con un admin.
+El acceso lo controla el bot — vinculas tu nombre de Minecraft a tu
+Discord. Sin esto, no entras.
+
+### 0.1 — Consigue el rol
+
+Pide a un admin el rol **`SuiteLand - Jugador`**. Es manual — no se
+consigue solo. Cuando lo tengas:
+
+### 0.2 — `/mc link TuNombre`
+
+En cualquier canal del Discord escribe:
+
+```
+/mc link TuNombreDeMinecraft
+```
+
+- Nombre **exacto** del juego (3-16 caracteres, sin espacios, con las
+  mayúsculas/minúsculas que vayas a usar al entrar).
+- El bot responde en privado (solo lo ves tú).
+
+### 0.3 — ¿Premium o no?
+
+| Tu cuenta | Qué pasa |
+|---|---|
+| **Premium** (Microsoft oficial) | ✅ Vinculado al instante — ya puedes entrar. Ve al Paso 1. |
+| **No premium** (cracked, TLauncher, etc.) | El bot te da un **código de 6 dígitos** — sigue leyendo ↓ |
+
+### 0.4 — Verificación con código (solo no premium)
+
+El código demuestra que eres tú el que entró con ese nombre:
+
+1. Copia el código que te dio el bot (ej: `482917`)
+2. Entra al server con **ese nombre** — ya estás en la whitelist temporal
+3. Al entrar estarás **congelado en un limbo** — no te muevas, es normal
+4. Escribe en el chat del juego: `/link 482917`
+   (o el código a pelo si el mod aún no está activo)
+5. ✅ `§a✔ Cuenta verificada` — te descongela y quedas vinculado
+
+**Si no lo haces en 15 minutos** el código muere, sales de la whitelist
+y el bot te avisa por DM — vuelve a `/mc link`.
+
+> 💡 El limbo existe para que nadie robe tu nombre: solo sale de él
+> quien demuestra tener el código Y haber entrado con esa cuenta.
+
+---
 
 ## Paso 1 — Instalar el pack
 
+Descarga el `.mrpack` de [Releases](../../releases/latest) — es la
+instancia completa.
+
 ### CurseForge
 
-1. Descarga el `.mrpack` de [Releases](../../releases/latest)
-2. CurseForge → **Minecraft** → **Crear perfil personalizado** → **Importar**
-   → selecciona el `.mrpack` (o arrastra el archivo sobre la ventana)
-3. **Ajusta la RAM** (importante — el pack necesita ~10 GB):
-   - Perfil → menú ⋮ → **Opciones de perfil**
-   - Desmarca "usar memoria del sistema" → sube a **10240 MB** o más
-4. Jugar → el launcher instala Java 21 y NeoForge solo
+1. **Minecraft** → **Crear perfil personalizado** → **Importar**
+   → el `.mrpack` (o arrastra el archivo)
+2. **RAM — importante**: Perfil → ⋮ → Opciones → memoria → **10240 MB**
+3. Jugar
 
 ### Prism Launcher
 
 1. **Añadir instancia** → **Importar** → **Modrinth** → el `.mrpack`
-2. Editar instancia → Ajustes → Java → memoria: **10240 MB** min
+2. Editar → Java → memoria: **10240 MB** mínimo
 3. Jugar
 
 ### Launcher oficial
 
-1. Instala NeoForge 21.1.267 para Minecraft 1.21.1
-2. Pon `automodpack.jar` (de Releases) en `%appdata%\.minecraft\mods\`
-3. Perfil NeoForge → en Opciones de lanzamiento sube `-Xmx10G`
-4. Jugar
+1. Instala NeoForge 21.1.267 para MC 1.21.1
+2. `automodpack.jar` en `%appdata%\.minecraft\mods\`
+3. Opciones de lanzamiento → `-Xmx10G`
+
+---
 
 ## Paso 2 — Primera conexión
 
-1. Multijugador → añadir server con la IP del Discord
-2. Al conectar, AutoModpack descarga el pack completo (~2 GB — solo esta vez)
+1. Multijugador → **Añadir servidor** → la IP que te dieron
+2. Al conectar, **AutoModpack descarga el pack** (~2 GB — solo esta vez)
 3. El juego se reinicia solo → conecta de nuevo → dentro
 
-## Paso 3 — Entrar al mundo
+---
 
-| Tu caso | Qué pasa al entrar |
+## Paso 3 — Registro en el juego (SimpleLogin)
+
+El server no usa cuentas de Microsoft — lleva su propio sistema:
+
+| Es tu primera vez | Qué escribes en el chat |
 |---|---|
-| Cuenta **premium** (Microsoft) | Entras directo — sin contraseñas |
-| Cuenta **no premium** | Te pide `/register <contraseña> <contraseña>` la primera vez, `/login <contraseña>` después |
+| Sí, primera entrada | `/register TuContraseña TuContraseña` |
+| Ya te registraste antes | `/login TuContraseña` |
 
-## Qué verás si algo falta
+> 🔐 Tu contraseña ancla tu nombre: nadie puede ser "tú" sin ella.
+> Elige una que recuerdes — no hay recuperación automática.
 
-| Situación | Mensaje |
-|---|---|
-| Sin vincular (no estás en whitelist) | *"You are not white-listed on this server!"* → ve al Discord y `/vincular` |
-| `/vincular` sin rol de jugador | El bot responde: necesitas el rol — reacciona en el panel |
-| Nombre ya vinculado a otro Discord | El bot lo bloquea — habla con un admin |
-| Vinculado pero sin /register | SimpleLogin te pide la contraseña en pantalla al entrar |
+### Si eres no premium y usaste código
+
+El orden dentro del juego es: `/register` (o `/login`) → `/link 482917`.
+SimpleLogin bloquea `/link` hasta que estés autenticado — así solo tú
+puedes confirmar tu propio nombre.
+
+---
 
 ## Después — actualizaciones
 
-Nada. Al conectar, los cambios del pack se descargan solos y reinicia.
-Sin cambios → entras directo.
+Nada. Al conectar, los cambios del pack se descargan solos y el juego
+reinicia. Sin cambios → entras directo.
+
+---
+
+## Qué verás si algo falta
+
+| Mensaje | Significado |
+|---|---|
+| *"You are not white-listed"* | No hiciste `/mc link` o el código caducó |
+| El bot: "necesitas el rol Jugador" | Pide el rol a un admin primero |
+| *"ya está vinculado"* | Otro Discord ya usó ese nombre — habla con admin |
+| *"Código no válido o caducado"* | Pasaron 15 min — `/mc link` de nuevo |
+| Te quedas quieto al entrar | Limbo de verificación — `/link CODIGO` |
 
 ## Problemas
 
 | Síntoma | Solución |
 |---|---|
-| El pack no descarga | Espera a que AutoModpack termine y reinicia el juego |
-| Pantalla roja / kick al conectar | Server actualizando — reintenta en 2 min |
-| Crash al arrancar el juego | Sube la RAM a 10-12 GB (causa #1) |
-| Sigue crasheando | Borra `.minecraft/mods/` menos `automodpack.jar` y reintenta |
+| El pack no descarga | Espera a AutoModpack y reinicia el juego |
+| Pantalla roja al conectar | Server actualizando — reintenta en 2 min |
+| Crash al arrancar | Sube RAM a 10-12 GB (causa #1) |
+| Sigue crasheando | Borra `.minecraft/mods/` menos `automodpack.jar` |
+
+---
+
+## Resumen — el camino feliz
+
+```
+Discord          Juego
+───────────────────────────────────────────
+admin te da rol
+  Jugador
+    │
+/mc link Nombre ──→ premium: vinculado ya
+                └──→ no premium: código 482917
+                     │
+                     ├── instala .mrpack
+                     ├── conecta a la IP
+                     ├── /register clave clave   (1ª vez)
+                     └── /link 482917            (con código)
+                          │
+                     ¡a jugar! 🏝️
+```
