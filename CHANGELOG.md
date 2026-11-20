@@ -11,7 +11,7 @@
 
 - `/perfil` — tu ficha: tiempo jugado, primera/última conexión,
   si estás AFK, en qué mundo estás. Click para mandar /msg.
-- `/playtime` — cuánto llevas jugado
+- `/playtime [jugador]` — cuánto llevas jugado tú o cualquiera online
 - `/seen <jugador>` — cuándo entró alguien por última vez
 
 ## v1.0.1 — 20 nov 2026 — Fix y polish
