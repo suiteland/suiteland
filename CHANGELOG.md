@@ -3,9 +3,28 @@
 > Qué ha cambiado en el servidor — para jugadores.
 > Versión técnica detallada en [docs privados](https://github.com/suiteland/docs).
 
-**Versión actual:** `v1.2.0` · FTB Direwolf20 1.21.1
+**Versión actual:** `v1.3.0` · SuiteLand Pack 1.0.0
 
 ---
+
+## v1.3.0 — 21 nov 2026 — Vínculo Discord↔Minecraft
+
+**Vincula tu cuenta de Discord con la de Minecraft** — escribe en
+`#💬chat` del Discord y aparece in-game con tu rango y perfil:
+
+- **`/vincular`** en el juego → te da un código de 6 letras
+- **`/vincular <código>`** en Discord → cuenta vinculada
+- Escribes en `#💬chat` → sale `[Discord] [Admin] TuNombre » msg`
+  con tu rango real y el hover de perfil (juegues o no — funciona
+  offline)
+- **`/desvincular`** — quita el vínculo desde el juego o Discord
+
+**Chat bidireccional** — Discord y Minecraft comparten el mismo
+chat: joins, leaves, muertes y logros de Minecraft aparecen en
+`#💬chat`, y lo que escribas ahí aparece en el juego.
+
+`/vhelp` — el `/help` vanilla para ops (el normal es el nuestro,
+paginado y clickable).
 
 ## v1.2.0 — 20 nov 2026 — Perfil y estado
 
